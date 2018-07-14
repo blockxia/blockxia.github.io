@@ -1,0 +1,43 @@
+## 1. 使用vuex的一些基本编码 
+	创建所有相关的模块: store/index|state|mutations|actions|getters|mutation-types
+    设计state: 从后台获取的数据
+    实现actions: 
+        定义异步action: async/await
+        流程:　发ajax获取数据, commit给mutation
+    实现mutations: 给状态赋值
+    实现index: 创建store对象
+    main.js: 配置store
+	在组件中使用
+		this.$store.dispatch()
+		mapState()/mapGetters()/mapActions()  
+
+## 2. 模板中显示数据的来源 
+	data
+	props
+	computed: 根据data/props/vuex的state或getters计算产生
+
+## 3. 说说你对async和await的理解和使用
+	简化promise的使用
+	以同步编码方式实现异步流程
+	使用await: 调用返回promise的函数, 如果想直接异步结果数据, 在左侧使用
+	使用async: 在使用await所在的函数定义左侧
+
+## 4. 编码实现: 根据一个一维数组生成一个二维数组(内部数组最大长度是6) 
+	const arr1 = [1, 3, 5, 7, 13, 9, 14, 12, 11, 9, 4, 2]
+	const arr2 = []
+	let smallArr = []
+	const max = 6
+	
+	arr1.forEach(item => {
+
+	  if(smallArr.length===max) {
+	    smallArr = []
+	  }
+
+	  if(smallArr.length===0) {
+	    arr2.push(smallArr)
+	  }
+
+	  smallArr.push(item)
+	})
+	console.log(arr2)
