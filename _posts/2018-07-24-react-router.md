@@ -81,6 +81,8 @@ excerpt:react-router
 ## 1). 下载
 	npm install react-router --save
 ## 2). 定义各个路由组件
+
+```js
 	1. About.js
 	  import React from 'react'
 	  function About() {
@@ -102,6 +104,8 @@ excerpt:react-router
           )
         }
       }
+
+      ```
 	4. App.js
 
 	```js
