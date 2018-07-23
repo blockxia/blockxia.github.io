@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "React-router讲解"
@@ -10,6 +9,8 @@ author: blockxia
 
 * content
 {:toc}
+
+
 
 # 1. 理解react-router
 	react的一个插件库
