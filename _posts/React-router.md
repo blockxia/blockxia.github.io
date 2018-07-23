@@ -1,3 +1,15 @@
+---
+layout: post
+title:  "React-router讲解"
+categories: react-router
+tags: react-router
+excerpt:react-router
+---
+
+* content
+{:toc}
+
+
 # 1. 理解react-router
 	react的一个插件库
 	专门用来实现一个SPA应用
@@ -32,7 +44,7 @@
 		window.location.hash读取#值
 		window.onhashchange = func 监听hash改变
 	3. 学习资源: 
-		阮一峰教程: http://www.ruanyifeng.com/blog/2011/03/url_hash.html
+		[阮一峰教程]: (http://www.ruanyifeng.com/blog/2011/03/url_hash.html)
 	
 # 3. react-router的学习资源
 	github主页: https://github.com/ReactTraining/react-router
