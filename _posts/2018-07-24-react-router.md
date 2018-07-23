@@ -1,14 +1,15 @@
+
 ---
 layout: post
 title:  "React-router讲解"
 categories: react-router
-tags: react-router
-excerpt:react-router
+tags:  Ubuntu Pycharm
+author: blockxia
+
 ---
 
 * content
 {:toc}
-
 
 # 1. 理解react-router
 	react的一个插件库
