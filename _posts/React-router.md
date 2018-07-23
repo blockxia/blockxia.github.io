@@ -103,6 +103,8 @@ excerpt:react-router
         }
       }
 	4. App.js
+
+	```js
     import React, {Component} from 'react'
     import {Link} from 'react-router'
     
@@ -120,7 +122,11 @@ excerpt:react-router
         )
       }
     }
+    ```
+
 ## 3). index.js: 注册路由, 渲染路由器标签
+
+```js
     import React from 'react'
     import {render} from 'react-dom'
     import {Router, Route, IndexRoute, hashHistory} from 'react-router'
@@ -138,6 +144,7 @@ excerpt:react-router
         </Route>
       </Router>
     ), document.getElementById('app'))
+```
 
 
 ## 3). 主页面: index.html
@@ -149,6 +156,8 @@ excerpt:react-router
 
 # 6. 向路由组件传递请求参数
 ## 1). repo.js: repos组件下的分路由组件
+
+```js
     import React from 'react'
     export default function ({params}) {
       let {username, repoName} = params
@@ -156,7 +165,11 @@ excerpt:react-router
         <div>用户名:{username}, 仓库名:{repoName}</div>
       )
     }
+```
+
 ## 2). repos.js
+
+```js
     import React from 'react'
     import NavLink from './NavLink'
     
@@ -215,12 +228,19 @@ excerpt:react-router
         );
       }
     }
+```
+
 ## 3). index.js: 配置路由
+
+```js
     <Route path="/repos" component={Repos}>
       <Route path="/repos/:username/:repoName" component={Repo}/>
     </Route>
+```
 
 # 7. 优化Link组件
+
+```js
 ## 1). NavLink.js
     import React from 'react'
     import {Link} from 'react-router'
@@ -229,4 +249,4 @@ excerpt:react-router
     }
 ## 2). Repos.js
     <NavLink to={to}>{repo.repoName}</NavLink>
-    
+```
