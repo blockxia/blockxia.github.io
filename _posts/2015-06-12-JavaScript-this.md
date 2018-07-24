@@ -3,13 +3,13 @@ layout: post
 title:  "JavaScript 中的 this"
 date:   2015-06-12 14:06:05
 categories: JavaScript
-tags: JavaScript 慕课网 this ife
+tags: JavaScript
 ---
 
 * content
 {:toc}
 
-本文为慕课网 [JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 中的 this笔记。
+ [JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 中的 this笔记。
 
 
 

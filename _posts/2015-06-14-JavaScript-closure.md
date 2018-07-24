@@ -3,13 +3,13 @@ layout: post
 title:  "JavaScript 中的闭包"
 date:   2015-06-14 14:06:05
 categories: JavaScript
-tags: JavaScript 闭包 慕课网 ife
+tags: JavaScript 闭包
 ---
 
 * content
 {:toc}
 
-本文为慕课网 [JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 中的闭包笔记。
+[JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 中的闭包笔记。
 
 
 

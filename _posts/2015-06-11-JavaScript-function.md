@@ -3,13 +3,13 @@ layout: post
 title:  "JavaScript 函数"
 date:   2015-06-11 14:06:05
 categories: JavaScript
-tags: JavaScript 函数 慕课网 ife
+tags: JavaScript 函数
 ---
 
 * content
 {:toc}
 
-本文为慕课网 [JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 函数笔记。
+ [JavaScript深入浅出](http://www.imooc.com/learn/277) JavaScript 函数笔记。
 
 
 

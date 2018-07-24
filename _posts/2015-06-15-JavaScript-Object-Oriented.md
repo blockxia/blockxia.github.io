@@ -3,13 +3,13 @@ layout: post
 title:  "JavaScript 面向对象"
 date:   2015-06-15 14:06:05
 categories: JavaScript
-tags: JavaScript 面向对象 慕课网 ife
+tags: JavaScript 面向对象
 ---
 
 * content
 {:toc}
 
-本文为慕课网 [JavaScript深入浅出](http://www.imooc.com/learn/277)  JavaScript 面向对象笔记。
+[JavaScript深入浅出](http://www.imooc.com/learn/277)  JavaScript 面向对象笔记。
 
 
 
