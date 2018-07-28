@@ -56,3 +56,21 @@ author: blockxia
 	Application: 查看浏览器端存储(localStorage, cookie)
 	Sources: debugger调试
 	react: 查看react组件(state, props)
+
+## 6. 后台路由回调函数处理的3个步骤
+
+	1). 通过req读取请求参数数据
+	2). 处理数据(与数据库交互)
+	3). 通过res向浏览器端返回响应
+
+## 7. async与await的理解和使用
+
+	1). 理解: 同步编码方式实现异步ajax请求, 简化promise的使用
+	2). 使用:
+		在调用接口请求函数语句的左侧指定await, 直接接收异步返回的response
+		在await所在的函数左侧指定async
+
+
+## 8. react前后台应用整体结构图
+
+![react前后台应用整体结构图](https://i.imgur.com/zfGZ7Eb.png)
