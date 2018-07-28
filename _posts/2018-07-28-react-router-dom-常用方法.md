@@ -2,7 +2,7 @@
 layout: post
 title:  "react-router-dom"
 categories: react-router
-tags: react-router
+tags: react-router，react
 author: blockxia
 
 ---
