@@ -14,7 +14,7 @@
      */
   var demoContent = [
     {
-      demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
+ /*     demo_link: 'https://codepen.io/haoyang/pen/jrvrQq',
       img_link: 'https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png',
       code_link: 'https://codepen.io/haoyang/pen/jrvrQq',
       title: 'Fisher-Yates 洗牌算法动画',
@@ -134,7 +134,7 @@
       description: '使用BootStrap仿照知乎做了一个静态页面。'
     }
   ];
-
+*/
   contentInit(demoContent) //内容初始化
   waitImgsLoad() //等待图片加载，并执行布局初始化
 }());
