@@ -10,7 +10,7 @@ author: blockxia
 * content
 {:toc}
 
-# 1.去除vue路由跳转地址栏后的哈希值#，我们只需要在路由跳转的管理文件router目录下的index.js中加上一句代码即可去掉哈希值#
+## 1.去除vue路由跳转地址栏后的哈希值#，我们只需要在路由跳转的管理文件router目录下的index.js中加上一句代码即可去掉哈希值#
 
 ```js
 
