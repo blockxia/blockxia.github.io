@@ -1,0 +1,161 @@
+---
+layout: post
+title:  "vue实用技巧"
+categories: vue
+tags: hash#,性能优化
+author: blockxia
+
+---
+
+* content
+{:toc}
+
+## 1.去除vue路由跳转地址栏后的哈希值#，我们只需要在路由跳转的管理文件router目录下的index.js中加上一句代码即可去掉哈希值#
+
+```js
+
+import Vue from 'vue'
+//1.引入vue-router
+import Router from 'vue-router'
+
+import find from '../components/find'
+import mall from '../components/mall'
+import microshop from '../components/microshop'
+import cloud from '../components/cloud'
+import personalcenter from '../components/personalcenter'
+
+//2.使用vue-router
+Vue.use(Router)
+
+//3.实例化router这个构造函数
+let router = new Router({
+//去掉地址中的哈希#
+mode:"history",
+//5.映射，什么样的地址跳转到什么样的page
+routes:[
+{
+//根目录
+path:'/',
+name:'首页',
+component:mall
+},
+{
+//发现page
+path:'/find',
+name:'发现',
+component:find
+},
+{
+//微店page
+path:'/microshop',
+name:'购物袋',
+component:microshop
+},
+{
+//云仓page
+path:'/cloud',
+name:'云仓',
+component:cloud
+},
+{
+//我的page
+path:'/personalcenter',
+name:'我的',
+component:personalcenter
+}
+]
+});
+//page跳转后title改变
+router.afterEach(function (to) {
+document.title = to.name
+})
+export default router
+
+```
+## 2.代码分割
+
+```js
+
+// import Msite from '../pages/Msite/Msite.vue'
+// import Order from '../pages/Order/Order.vue'
+// import Search from '../pages/Search/Search.vue'
+// import Profile from '../pages/Profile/Profile.vue'
+
+// 打包时进行代码分割, 只有当需要时才从后台请求获取
+const Msite=()=>import('../pages/Msite/Msite.vue')
+const Order=()=>import('../pages/Order/Order.vue')
+const Search=()=>import('../pages/Search/Search.vue')
+const Profile=()=>import('../pages/Profile/Profile.vue')
+
+```
+
+
+## 3.vue中less编译配置
+
+```js
+下载less和less-loader，在build中webpack.base.conf.js的module里配置
+module.exports = {
+  context: path.resolve(__dirname, '../'),
+  entry: {
+    app: './src/main.js'
+  },
+  output: {
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? config.build.assetsPublicPath
+      : config.dev.assetsPublicPath
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+    }
+  },
+  module: {
+    rules: [
+      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: vueLoaderConfig
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }
+      },
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('media/[name].[hash:7].[ext]')
+        }
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        }
+      },
+      + {
+        test: /\.less$/,
+        loader: ['style-loader','css-loader','less-loader'],
+      + },
+    ]
+  },
+
+}
+```
