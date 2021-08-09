@@ -4,6 +4,9 @@ title:  "webstorm连接Git及使用"
 categories: iconfont
 tags: iconfont
 author: blockxia
+
+
+
 ---
 * content
 {:toc}
@@ -13,10 +16,7 @@ author: blockxia
 ## 1. 确保你的电脑上安装好了webstorm并且你有一个Git账号，我的环境是win10
 
 
-```js
 
-
-```
 ## 2. 在你的Git上好仓库
 
 
