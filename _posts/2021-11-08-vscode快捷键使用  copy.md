@@ -114,12 +114,33 @@ author: blockxia
 
 
 ## 2. 终端快捷键是ctrl+`即可打开终端
+```
+ctrl+`即可打开终端
+```
 
 
 ## 3.ctrl+k和ctrl+s同时按下可以打开快捷键设置，设置成自己习惯用的快捷键
-
+```
+ctrl+k和ctrl+s同时按下可以打开快捷键设置
+```
 
 ## 4.打开左侧菜单栏倒数第二个可以下载前端所需的插件：eslint、Git History(快捷键shift+ctrl+p查找历史记录)、Vetur等
+```
+shift+ctrl+p查找历史记录
+```
 
+## 5.解决VSCode不能粘贴文件问题
+
+```
+一、vscede创建快捷方式，右键属性-兼容性-以管理员身份运行此程序
+
+二、1. 以管理员身份运行PowerShell
+
+2. 执行：get-ExecutionPolicy，回复Restricted，表示状态是禁止的
+
+3.执行：set-ExecutionPolicy RemoteSigned
+
+4.选择Y。注意：一定要以管理员的身份运行PowerShell，不是cmd窗口！
+```
 
 
