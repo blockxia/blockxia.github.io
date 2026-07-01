@@ -10,6 +10,9 @@ type: page
 {:toc}
 
 ## 工具
+* [草料二维码 generator](https://cli.im/url)
+
+    生成二维码 的工具。
 
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
 
@@ -22,6 +25,9 @@ type: page
 * [Ultimate CSS Gradient Generator](http://www.colorzilla.com/gradient-editor/)
 
     也是渐变生成器
+* [Canva Gradient Generator](https://www.canva.cn/projects/)
+
+    文档设计生成器
 
 * [CSS Generators -CSSREFLEX](http://www.cssreflex.com/css-generators/)
 
